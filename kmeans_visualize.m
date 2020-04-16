@@ -61,29 +61,3 @@ for i=1:15
     old_c = C;
     pause(1);
 end
-
-
-
-% 
-% labelImg = img;
-% labelImg(labelImg>=0 & labelImg<optimalThresh1) = 1;
-% labelImg(labelImg>=optimalThresh1 & labelImg<optimalThresh2) = 2;
-% labelImg(labelImg>optimalThresh2) = 3;
-% RGB = label2rgb(labelImg, 'spring', 'c','shuffle'); 
-% 
-% if exist('c1','var')
-% delete(c1);
-% delete(c2);
-% delete(text1);
-% delete(text2);
-% end
-% hold on;
-% subplot(1,2,1);imhist(img);
-% yl = ylim();
-% 
-% c1= line([optimalThresh1, optimalThresh1], [yl(1), yl(2)],'Color', 'r', 'LineWidth', 2);
-% c2= line([optimalThresh2, optimalThresh2], [yl(1), yl(2)],'Color', 'g', 'LineWidth', 2);
-% text1 = text(optimalThresh1,yl(2),num2str(optimalThresh1));
-% text2 = text(optimalThresh2,yl(2),num2str(optimalThresh2));
-% subplot(1,2,2);imshow(RGB);
-% pause(.0001); %required to update image frames
